@@ -5,3 +5,12 @@ function superbowlWin(record) {
     }
   }
 }
+
+function superbowlWin(record) {
+  const found = record.find((element) => {
+    if (element.result === "W") {
+      return element.year;
+    }
+  });
+  return found.year;
+}
